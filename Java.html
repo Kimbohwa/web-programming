@@ -3,88 +3,7 @@
 <head><!--본문 설명-->
   <meta charset="utf-8">
   <title>김보화 포트폴리오</title>
-  <style>
-    h1{
-      font-size: 40px;
-      text-align: center;
-      padding: 20px;
-      /*border-bottom: 1px solid DimGray;*/
-      margin: 0;
-      color: Black;
-    }
-    #mainMenu,#subMenu{
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-    }
-
-    #mainMenu {
-      margin-left: 45px;
-      /*height: 30px;
-      width: 100%;
-      position: fixed;*/
-    }
-
-    #mainMenu>li {
-      float: left;
-      /*position: relative;*/
-      /*list-style: none;
-      line-height: 35px;
-      vertical-align: middle;
-      text-align: center;*/
-    }
-    #mainMenu>li>a{
-      border: 1px solid #f29c74;
-      display: block;
-      padding: 8px 16px;
-      text-align: center;
-      text-decoration: none;
-      color: white;
-      font: bold 15px "Trebuchet MS", "굴림", Arial;
-
-      background-color: #ffcab2;
-      width: 200px;
-    }
-
-    #mainMenu>li>a:hover {
-      background-color: snow;
-      color:#f29c74;
-    }
-
-    #mainMenu>li:hover #subMenu{
-      opacity: 1;
-      visibility: visible;
-    }
-    #subMenu{
-      position: absolute;
-      opacity: 0;
-      visibility: hidden;
-    }
-    #subMenu>li {
-      /*display: none;
-      float:none;
-      margin:0;*/
-      padding: 8px 16px;
-
-      background-color: #f29c74;
-      width: 200px;
-      text-align: center;
-    }
-    #subMenu>li>a{
-      /*list-style: none;*/
-      text-decoration: none;
-      color: snow;
-    }
-    #subMenu>li:hover{
-        background-color: #FE642E;
-    }
-
-    @media(max-width:800px) {
-      #mainMenu{
-        display: block;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PT25T76258"></script>
   <script>
@@ -96,24 +15,98 @@
   </script>
 </head>
 <body><!--본문-->
-  <h1>김보화 포트폴리오</h1>
-    <nav>
-    <ul id="mainMenu">
-      <li><a href="index.html" class="mainMenu">메인페이지</a></li>
-      <li><a href="1.html" title="자격증 종류" class="mainMenu">자격증</a></li>
-      <li><a>과목</a>
-        <ul id="subMenu">
-          <li><a href="Java.html">JAVA</a></li>
-          <li><a href="DataStructure.html">자료구조(C언어)</a></li>
-          <li><a href=".html">악성코드 분석</a></li>
-          <li><a href=".html">정보처리기사</a></li>
-          <li><a href="Linux.html">리눅스</a></li>
-        </ul>
-      </li>
-      <li><a href="3.html" class="mainMenu">SNS</a></li>
-      <li><a href="4.html" class="mainMenu">Q&A</a></li>
-    </ul>
-  </nav>
+  <div id="wrapper">
+    <div id="body-content">
+      <div id="top">
+        <h1>Bohwa's portfolio</h1>
+        <nav>
+          <ul id="mainMenu">
+            <li><a href="index.html" class="mainMenu">메인페이지</a></li>
+            <li><a href="1.html" title="자격증 종류" class="mainMenu">자격증</a></li>
+            <li><a>과목</a>
+              <ul id="subMenu">
+                <li><a href="Java.html">JAVA</a></li>
+                <li><a href="DataStructure.html">자료구조(C언어)</a></li>
+                <li><a href=".html">악성코드 분석 및 제작</a></li>
+                <li><a href=".html">정보처리기사</a></li>
+                <li><a href="Linux.html">리눅스</a></li>
+              </ul>
+            </li>
+            <li><a href="3.html" class="mainMenu">SNS</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <table>
+        <tr>
+          <th>번호</th>
+          <th>자격증명</th>
+          <th>취득일자</th>
+          <th>주관기관</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>네트워크 관리사 2급</td>
+          <td>2020-06-30</td>
+          <td><a href="https://www.icqa.or.kr/cn/" target="_blank" title="한국정보통신자격협회 홈페이지">한국정보통신자격협회</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>인터넷보안전문가 2급</td>
+          <td>2020-11-24</td>
+          <td><a href="https://www.icqa.or.kr/cn/" target="_blank" title="한국정보통신자격협회 홈페이지">한국정보통신자격협회</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>토익 545점</td>
+          <td>2021-10-10</td>
+          <td><a href="https://www.toeic.co.kr/" target="_blank" title="YBM 홈페이지">YBM</a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>토익 700점</td>
+          <td>2021-12-05</td>
+          <td><a href="https://www.toeic.co.kr/" target="_blank" title="YBM 홈페이지">YBM</a></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>COS PRO 2급 (JAVA)</td>
+          <td>2022-05-21</td>
+          <td><a href="https://www.ybmit.com/" target="_blank" title="YBM IT 홈페이지">YBM IT</a></td>
+        </tr>
+      </table>
+    </div>
+    <footer class="footer">
+      <div id="disqus_thread"></div>
+        <script>
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://portpolio-2.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/62b4a540b0d10b6f3e7902a6/1g68qb1q9';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+      </script>
+        <!--End of Tawk.to Script-->
+    </footer>
+  </div>
+
+
+
+
 
 </body>
 </html>

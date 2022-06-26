@@ -3,64 +3,75 @@
 <head><!--본문 설명-->
   <meta charset="utf-8">
   <title>김보화 포트폴리오</title>
-  <style>
-    h1:link, h1:visited, h1:hover, h1:active{
-      font-size: 45px;
-      text-align: center;
-      padding: 20px;
-      border-bottom: 1px solid gray;
-      margin: 0;
-      color: gray;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PT25T76258"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PT25T76258"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'G-PT25T76258');
-</script>
+    gtag('config', 'G-PT25T76258');
+  </script>
 </head>
 <body><!--본문-->
-  <h1><a href="index.html">김보화 포트폴리오</a></h1>
-  <ol>
-    <li><a href="1.html" target="_blank" title="자격증 종류">자격증</a></li>
-    <li><a href="2.html">과목</a></li>
-    <li><a href="3.html" style="color:Gray">SNS</a></li>
-    <li><a href="4.html">Q&A</a></li>
-  </ol>
-  <h2>프로그래밍</h2>
-  <ul>
-    <li>JAVA</li>
-    <li>자료구조(C언어)</li>
-    <li>악성코드 분석 및 제작</li>
-  </ul>
+  <div id="wrapper">
+    <div id="body-content">
+      <div id="top">
+        <h1>Bohwa's portfolio</h1>
+        <nav>
+          <ul id="mainMenu">
+            <li><a href="index.html" class="mainMenu">메인페이지</a></li>
+            <li><a href="1.html" title="자격증 종류" class="mainMenu">자격증</a></li>
+            <li><a>과목</a>
+              <ul id="subMenu">
+                <li><a href="Java.html">JAVA</a></li>
+                <li><a href="DataStructure.html">자료구조(C언어)</a></li>
+                <li><a href=".html">악성코드 분석 및 제작</a></li>
+                <li><a href=".html">정보처리기사</a></li>
+                <li><a href="Linux.html">리눅스</a></li>
+              </ul>
+            </li>
+            <li><a href="3.html" class="mainMenu">SNS</a></li>
+          </ul>
+        </nav>
+      </div>
 
-  <div id="disqus_thread"></div>
-<script>
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://portpolio-2.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <p>
+        깃허브 주소 : <a href="https://github.com/Kimbohwa" title="깃허브 주소">https://github.com/Kimbohwa</a>
+      </p>
+    </div>
+    <footer class="footer">
+      <div id="disqus_thread"></div>
+        <script>
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://portpolio-2.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/62b4a540b0d10b6f3e7902a6/1g68qb1q9';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/62b4a540b0d10b6f3e7902a6/1g68qb1q9';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+      </script>
+        <!--End of Tawk.to Script-->
+    </footer>
+  </div>
+
+
+
+
+
 </body>
 </html>
