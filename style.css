@@ -2,11 +2,16 @@ h1{
   font: 40px;
   text-align: center;
   padding: 10px;
-  /*border-bottom: 1px solid DimGray;*/
   margin: 0;
   color: #ffcab2;
   display: inline;
-  -webkit-text-stroke: 1px #f29c74;
+  -webkit-text-stroke: 0.5px #f29c74;
+}
+a:link{
+  color:DarkCyan;
+}
+a:visited{
+  color:Tomato;
 }
 p{
   margin-top: 50px;
@@ -39,25 +44,17 @@ footer{
 }
 
 #mainMenu {
-  margin-left: 45px;
-  margin-top: 35px;
-  /*height: 30px;
-  width: 100%;
-  position: fixed;*/
+  margin-left: 20px;
+  margin-top: 30px;
 }
 
 #mainMenu>li {
   float: left;
-  /*position: relative;*/
-  /*list-style: none;
-  line-height: 35px;
-  vertical-align: middle;
-  text-align: center;*/
 }
 #mainMenu>li>a{
   border: 1px solid #f29c74;
   display: block;
-  padding: 8px 16px;
+  padding: 8px 0;
   text-align: center;
   text-decoration: none;
   color: white;
@@ -82,17 +79,13 @@ footer{
   visibility: hidden;
 }
 #subMenu>li {
-  /*display: none;
-  float:none;
-  margin:0;*/
-  padding: 8px 16px;
+  padding: 8px 0;
 
   background-color: #f29c74;
   width: 200px;
   text-align: center;
 }
 #subMenu>li>a{
-  /*list-style: none;*/
   text-decoration: none;
   color: snow;
 }
@@ -107,26 +100,39 @@ table{
   margin-top: 50px;
   text-align: center;
 }
-td,th{
+table th,
+table td {
   border: 1px solid DarkGray;
   padding: 10px;
+	// 이렇게 해도 됨
+}
+table th:first-child,
+table td:first-child {
+	border-left: 0;
+}
+table th:last-child,
+table td:last-child {
+	border-right: 0;
+}
+table th{
+  background-color: #edecec;
 }
 
-@media(max-width:770px) {
+@media(max-width:780px) {
   #mainMenu{
     display: block;
   }
   #mainMenu {
     margin-left: 10px;
-    margin-top: 25px;
+    margin-top: 20px;
   }
   #mainMenu>li>a{
-    padding: 2px 4px;
+    padding: 5px 10px;
     width: 100px;
   }
   #subMenu>li{
     width: 100px;
-    padding: 2px 4px;
+    padding: 5px 10px;
     font-size: 13px;
   }
   h1{
