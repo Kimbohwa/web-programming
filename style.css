@@ -1,0 +1,123 @@
+h1{
+  text-align: center;
+  padding: 20px;
+  /*border-bottom: 1px solid DimGray;*/
+  margin: 0;
+  color: #ffcab2;
+  display: inline;
+  -webkit-text-stroke: 1px #f29c74;
+}
+p{
+  margin-top: 80px;
+}
+#top{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+#wrapper{
+  min-height: 100%;
+  position: relative;
+}
+#body-content{
+  padding-bottom: 30px;
+}
+footer{
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#mainMenu,#subMenu{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#mainMenu {
+  margin-left: 45px;
+  margin-top: 20px;
+  /*height: 30px;
+  width: 100%;
+  position: fixed;*/
+}
+
+#mainMenu>li {
+  float: left;
+  /*position: relative;*/
+  /*list-style: none;
+  line-height: 35px;
+  vertical-align: middle;
+  text-align: center;*/
+}
+#mainMenu>li>a{
+  border: 1px solid #f29c74;
+  display: block;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font: bold 15px "Trebuchet MS", "굴림", Arial;
+
+  background-color: #ffcab2;
+  width: 200px;
+}
+
+#mainMenu>li>a:hover {
+  background-color: snow;
+  color:#f29c74;
+}
+
+#mainMenu>li:hover #subMenu{
+  opacity: 1;
+  visibility: visible;
+}
+#subMenu{
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+#subMenu>li {
+  /*display: none;
+  float:none;
+  margin:0;*/
+  padding: 8px 16px;
+
+  background-color: #f29c74;
+  width: 200px;
+  text-align: center;
+}
+#subMenu>li>a{
+  /*list-style: none;*/
+  text-decoration: none;
+  color: snow;
+}
+#subMenu>li:hover{
+    background-color: #FE642E;
+}
+/*
+#wrapper{
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 30px;
+}
+footer{
+  height: 30px;
+  position: relative;
+  transform: translate(-100%);
+}*/
+@media(max-width:800px) {
+  #mainMenu{
+    display: block;
+  }
+  #mainMenu {
+    margin-left: 25px;
+  }
+  #mainMenu>li>a{
+    padding: 2px 4px;
+    font: bold 15px "Trebuchet MS", "굴림", Arial;
+
+    width: 100px;
+  }
+  /*h1{}*/
+}
