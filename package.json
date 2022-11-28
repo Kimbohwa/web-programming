@@ -1,0 +1,30 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "this is web",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "readline-sync": "^1.4.10",
+    "underscore": "^1.13.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kimbohwa/web2.git"
+  },
+  "author": "bohwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kimbohwa/web2/issues"
+  },
+  "homepage": "https://github.com/Kimbohwa/web2#readme",
+  "keywords": [
+    "this",
+    "is",
+    "web"
+  ]
+}
