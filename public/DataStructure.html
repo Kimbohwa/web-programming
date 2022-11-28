@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head><!--본문 설명-->
+  <meta charset="utf-8">
+  <title>김보화 포트폴리오</title>
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PT25T76258"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PT25T76258');
+  </script>
+</head>
+<body><!--본문-->
+  <div id="wrapper">
+    <div id="body-content">
+      <div id="top">
+        <h1>Bohwa's portfolio</h1>
+        <nav>
+          <ul id="mainMenu">
+            <li><a href="index.html" class="mainMenu">메인페이지</a></li>
+            <li><a href="1.html" title="자격증 종류" class="mainMenu">자격증</a></li>
+            <li><a>과목</a>
+              <ul id="subMenu">
+                <li><a href="Java.html">JAVA</a></li>
+                <li><a href="DataStructure.html">자료구조(C언어)</a></li>
+                <li><a href="Linux.html">리눅스</a></li>
+              </ul>
+            </li>
+            <li><a class="mainMenu">Study</a>
+              <ul id="subMenu">
+                <li><a href="">개념 정리</a></li>
+                <li><a href="">소스 코드</a></li>
+              </ul>
+            </li>
+            <li><a href="https://github.com/Kimbohwa" class="mainMenu" title="깃허브로 이동합니다." target="_blank">Github</a></li>
+          </ul>
+        </nav>
+        <input id="login_button" type="button" value="로그인" onclick="
+            window.location.href ='login.html';
+        ">
+        <input id="membership_button" type="button" value="회원가입" onclick="
+            window.location.href ='membership.html';
+        ">
+      </div>
+      <table>
+        <tr>
+          <th>번호</th>
+          <th>제목</th>
+          <th>제출일자</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td><a href="https://github.com/Kimbohwa/Data-Structure/blob/main/1.c" title="깃허브로 이동합니다." target="_blank">[과제 1] 정수형 2차원 배열의 각 원소가 몇 번째 원소인지 출력</a></td>
+          <td>2022-04-04</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><a href="https://github.com/Kimbohwa/Data-Structure/blob/main/Source.c" title="깃허브로 이동합니다." target="_blank">[과제 2] 연결리스트의 모든 노드의 합과 최댓값 출력</a></td>
+          <td>2022-05-09</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><a href="https://github.com/Kimbohwa/Data-Structure/blob/main/3.c" title="깃허브로 이동합니다." target="_blank">[과제 3] max-heap을 구성하여 heap sort</a></td>
+          <td>2022-05-30</td>
+        </tr>
+      </table>
+
+    </div>
+    <footer class="footer">
+      <div id="disqus_thread"></div>
+        <script>
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://portpolio-2.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/62b4a540b0d10b6f3e7902a6/1g68qb1q9';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
+        <!--End of Tawk.to Script-->
+    </footer>
+  </div>
+
+
+
+
+
+</body>
+</html>

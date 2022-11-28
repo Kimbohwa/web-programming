@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--본문 설명-->
+  <meta charset="utf-8">
+  <title>김보화 포트폴리오</title>
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="func.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PT25T76258"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-PT25T76258');
+  </script>
+</head>
+
+<body>
+  <!--본문-->
+  <div id="wrapper">
+    <div id="body-content">
+      <div id="top">
+        <h1>Bohwa's portfolio</h1>
+        <nav>
+          <ul id="mainMenu">
+            <li><a href="index.html" class="mainMenu">메인페이지</a></li>
+            <li><a href="1.html" title="자격증 종류" class="mainMenu">자격증</a></li>
+            <li><a>과목</a>
+              <ul id="subMenu">
+                <li><a href="Java.html">JAVA</a></li>
+                <li><a href="DataStructure.html">자료구조(C언어)</a></li>
+                <li><a href="Linux.html">리눅스</a></li>
+              </ul>
+            </li>
+            <li><a class="mainMenu">Study</a>
+              <ul id="subMenu">
+                <li><a href="">개념 정리</a></li>
+                <li><a href="">소스 코드</a></li>
+              </ul>
+            </li>
+            <li><a href="https://github.com/Kimbohwa" class="mainMenu" title="깃허브로 이동합니다." target="_blank">Github</a>
+            </li>
+          </ul>
+        </nav>
+        <input id="login_button" type="button" value="로그인" onclick="
+            window.location.href ='login.html';
+        ">
+        <input id="membership_button" type="button" value="회원가입" onclick="
+            window.location.href ='membership.html';
+        ">
+      </div>
+      <div>
+        <table id="table">
+          <tr>
+            <th>취득연도</th>
+            <th>번호</th>
+            <th>자격증명</th>
+            <th>취득일자</th>
+            <th>주관기관</th>
+          </tr>
+          
+        </table>
+      </div>
+
+      <div id="cont">
+        <div>취득 연도 : <input type="text" placeholder="202X" id="year"></div>
+        <div>자격증명 : <input type="text" placeholder="네트워크 관리사 2급" id="name"></div>
+        <div>취득일자 : <input type="text" placeholder="202X-XX-XX" id="ymd"></div>
+        <div>주관기관 : <input type="text" placeholder="한국정보통신자격협회" id="department"></div>
+        <input type="button" id="login" value="등록" onclick="
+          checkData();
+        ">
+        <hr>
+      </div>
+
+      <div>
+        <input type="button" value="자격증 추가하기" onclick="
+        showForm(this);
+      ">
+      </div>
+      <input type="button" value="dark" onclick="
+        nightDayHandler(this);
+      ">
+    </div>
+  </div>
+</body>
+
+</html>

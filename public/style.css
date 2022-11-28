@@ -1,0 +1,273 @@
+body{
+  margin:0;
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  font-size: 40px;
+  font-family: 'League Gothic', sans-serif;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  color: #f29c74;
+  display: inline;
+}
+
+a:link {
+  color: DarkCyan;
+}
+
+a:visited {
+  color: Tomato;
+}
+
+p {
+  margin-top: 50px;
+  font: bold 20px "나눔고딕";
+}
+
+#top {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  border-bottom: 1px solid #f29c74;
+  padding-bottom: 15px;
+  position:relative;
+}
+
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+#body-content {
+  padding-bottom: 90px;
+}
+
+#text{
+  display: grid;
+  position:relative;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+footer {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#certParent{
+  display: flex;
+  justify-content: right;
+}
+
+#cert{
+  padding: 5px;
+  margin:10px;
+}
+
+#mainMenu,
+#subMenu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#mainMenu {
+  margin-left: 9%;
+  margin-top: 45px;
+}
+
+#mainMenu>li {
+  float: left;
+}
+
+#mainMenu>li>a {
+  border: 1px solid #f29c74;
+  display: block;
+  padding: 8px 0;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font: bold 15px "Trebuchet MS", "나눔고딕", Arial;
+
+  background-color: #ffcab2;
+  width: 200px;
+}
+
+#mainMenu>li>a:hover {
+  background-color: snow;
+  color: #f29c74;
+}
+
+#mainMenu>li:hover #subMenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+#subMenu {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 3;
+}
+
+#subMenu>li {
+  padding: 8px 0;
+
+  background-color: #f29c74;
+  width: 200px;
+  text-align: center;
+}
+
+#subMenu>li>a {
+  font: bold 15px "Trebuchet MS", "나눔고딕", Arial;
+  text-decoration: none;
+  color: snow;
+}
+
+#subMenu>li:hover {
+  background-color: #FE642E;
+}
+
+#login{
+  width: 250px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin-top:55px;
+}
+
+#membership{
+  width: 250px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin-top:35px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font: bold 15px "나눔고딕";
+  margin-top: 50px;
+  text-align: center;
+}
+
+table th,
+table td {
+  border: 1px solid DarkGray;
+  padding: 10px;
+}
+
+table th:first-child,
+table td:first-child {
+  border-left: 0;
+}
+
+table th:last-child,
+table td:last-child {
+  border-right: 0;
+}
+
+table th {
+  background-color: #edecec;
+}
+
+#membership_button{
+  position:absolute;
+  top: 15px;
+  right: 35px;
+  background-color: snow;
+  color:#f29c74;
+  border-color: #f29c74;
+  cursor:pointer;
+}
+
+#login_button{
+  position:absolute;
+  top: 15px;
+  right: 110px;
+  z-index: 2;
+  background-color: snow;
+  color:#f29c74;
+  border-color: #f29c74;
+  cursor:pointer;
+}
+
+#cont{
+  width: 300px;
+  height: 170px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 33px;
+}
+
+@media(max-width:780px) {
+  #mainMenu {
+    display: block;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
+  #mainMenu>li>a {
+    padding: 5px 10px;
+    width: 100px;
+  }
+
+  #subMenu>li {
+    width: 100px;
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+
+  #subMenu>li>a {
+    font-size: 13px;
+  }
+
+  h1 {
+    margin-top: 7px;
+    font-size: 30px;
+  }
+
+  table {
+    font-size: 13px;
+  }
+  #membership_button{
+    position:absolute;
+    top: 60%;
+    right:20px;
+  }
+  #login_button{
+    position:absolute;
+    top: 60%;
+    right:95px;
+  }
+}
+
+@media(max-width:560px){
+  #membership_button{
+    position:absolute;
+    top: 70%;
+  }
+  #login_button{
+    position:absolute;
+    top: 70%;
+  }
+}
